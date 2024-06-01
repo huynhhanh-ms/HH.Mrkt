@@ -19,7 +19,7 @@ export default function IntroComponent({ image }: Props) {
     setPlayback();
   }, [videoRef]);
   return (
-    <div className="relative w-full h-[80vh]">
+    <div className="relative w-full h-[100vh]">
       {/* <img
                 src={image}
                 alt="image"
@@ -38,11 +38,11 @@ export default function IntroComponent({ image }: Props) {
       </video>
 
       <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-40">
-        <div className="my-6">Crystal - Quyến Rũ Mọi Ánh Nhìn</div>
+        <div className="my-6">Vững bền mọi công trình</div>
         <div className="text-2xl">
-          Crystal không chỉ đơn thuần là đá quý,
+        Huynh Hạnh
           <br />
-          chúng còn là biểu tượng của vẻ đẹp tinh khiết và sự quyến rũ.
+          Lorem ipsum dolor sit.
         </div>
         <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
           <a href="/jewelry">Xem thêm</a>

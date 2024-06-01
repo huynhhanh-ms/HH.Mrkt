@@ -14,19 +14,15 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="relative ">
+    <div className="relative">
       <Header></Header>
-
-      {/* banner swiper */}
       <IntroComponent
-        // listImage={["/banner.png", "/banner1.png"]}
-        // listImage={["/intro_video.mp4", "/intro_video.mp4"]}
         image = "/intro_video.mp4"
       ></IntroComponent>
 
       {/* mau vang */}
-      <div className={`bg-[#FFE2EB] text-center pt-10 text-3xl`}>
-        Pha Lê - Vẻ Đẹp Kiêu Sa
+      <div className={`bg-current text-center pt-10 text-3xl`}>
+      asd
         <div className="p-10 text-xl">
           Pha lê không chỉ là biểu tượng của vẻ đẹp tinh khiết
           <br />
