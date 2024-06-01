@@ -3,8 +3,8 @@ import DropdownMenu from "../components/dropdown-menu";
 import Footer from "../components/footer";
 import GalleryCard from "../components/gallery-card";
 import Header from "../components/header";
-import SwiperComponent from "../components/swiper";
 import FilterCard from "../components/filter-card";
+import IntroComponent from "../components/swiper";
 
 export default function Jewelry() {
   const [products, setProducts] = useState([]);
@@ -41,10 +41,9 @@ export default function Jewelry() {
     <>
       <Header />
       {/* banner swiper */}
-      <SwiperComponent
-        // listImage={["/banner.png", "/banner1.png"]}
-        listImage={["/banner.mp4", "/banner.mp4"]}
-      ></SwiperComponent>
+      <IntroComponent
+        image = "/intro_video.mp4"
+      ></IntroComponent>
 
       <div className="bg-[#FFE2EB] px-1 py-3 xl:px-56">
         {/* filter */}
