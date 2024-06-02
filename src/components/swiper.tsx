@@ -37,12 +37,12 @@ export default function IntroComponent({ image }: Props) {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute z-20 text-5xl leading-9 text-left text-black left-32 bottom-40">
+      <div className="absolute z-20 text-5xl leading-9 text-left text-white left-32 bottom-40">
         <div className="my-6">Vững bền mọi công trình</div>
         <div className="text-2xl">
-        Huynh Hạnh
-          <br />
-          Lorem ipsum dolor sit.
+        Welcome to 
+        <br/>
+        Huynh Hanh Building Materials
         </div>
         <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
           <a href="/jewelry">Xem thêm</a>

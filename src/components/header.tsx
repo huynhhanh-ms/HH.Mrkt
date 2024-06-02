@@ -25,7 +25,7 @@ export default function Header() {
   }, [headerVisible, lastScrollTop]);
   return (
     <div
-      className={`p-5 sticky z-50 w-full text-black transition duration-100 bg-current border-current
+      className={`p-8 fixed z-50 w-full text-black transition duration-100 bg-current border-current
       ${!headerVisible ? "transform -translate-y-full" : ""}
       `}
     >
@@ -37,7 +37,7 @@ export default function Header() {
         </div>
         {/* <img src="/logo.png" alt="logo" className="h-[80px] w-[80px]" /> */}
         <div
-        className="text-6xl text-black font-manhattan"
+        className="absolute text-6xl text-black font-manhattan left-[50%] transform translate-x-[-50%] top-0 p-4"
         >HUYNH HANH</div>
         <div>
           <NavItem href="/jewelry">Đăng nhập</NavItem>

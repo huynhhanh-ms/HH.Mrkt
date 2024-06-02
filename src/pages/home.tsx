@@ -4,6 +4,7 @@ import Header from "../components/header";
 import BigCategoryCard from "../components/type-card";
 import AOS from "aos";
 import IntroComponent from "../components/swiper";
+import ServiceSection from "../components/service";
 // import ServiceSection from "../components/service";
 
 export default function Home() {
@@ -16,51 +17,50 @@ export default function Home() {
   return (
     <div className="relative">
       <Header></Header>
-      <IntroComponent
-        image = "/intro_video.mp4"
-      ></IntroComponent>
+      <IntroComponent image="/intro_video.mp4"></IntroComponent>
+
+      <br />
 
       {/* mau vang */}
       <div className={`bg-current text-center pt-10 text-3xl`}>
-      asd
+        Building Materials
         <div className="p-10 text-xl">
-          Pha lê không chỉ là biểu tượng của vẻ đẹp tinh khiết
+          Welcome to Huynh Hanh Construction Supplies,
           <br />
-          mà còn là sự lựa chọn hoàn hảo cho những ai muốn toát lên vẻ sang
-          trọng.
+          your trusted partner for high-quality bricks and building materials.
         </div>
       </div>
 
       {/* Infinitely Inspiring */}
       <BigCategoryCard
         key={1}
-        title="Cảm hứng vô tận"
+        title="Wide range of construction materials"
         item={[
           {
             image: "./test_image/3-removebg-preview.png",
-            title: "Vòng Tay",
+            title: "High-quality bricks",
             description:
-              "Được làm từ những viên đá SWAN cao cấp, Mỗi viên đá được lựa chọn kỹ lưỡng, đảm bảo chất lượng và độ tinh khiết cao nhất, mang lại vẻ đẹp hoàn mỹ cho trang sức. Thiết kế của dây chuyền vừa tinh tế và sự chú trọng đến từng chi tiết nhỏ.",
+              "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
           {
             image: "./test_image/2-removebg-preview.png",
-            title: "Bông Tai",
+            title: "Sand and gravel",
             description:
-              "SWAN không chỉ là biểu tượng của sự sang trọng và thanh lịch, mà còn thể hiện cá tính và gu thẩm mỹ riêng biệt của người đeo. Đá SWAN được chọn lọc kỹ lưỡng, tỏa sáng với phản chiếu ánh sáng một cách hoàn hảo để tôn lên vẻ đẹp của làn da.",
+              "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
           {
             image: "./test_image/6-removebg-preview.png",
-            title: "Dây Chuyền",
+            title: "Cement",
             description:
-              "chính hãng mang đến vẻ đẹp tinh tế và sang trọng, phù hợp với mọi phong cách thời trang.  Bông tai có thiết kế đa dạng, từ kiểu dáng cổ điển đến hiện đại, đảm bảo bạn sẽ tìm thấy một cặp phù hợp với cá tính của mình.",
+              "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
         ]}
       ></BigCategoryCard>
 
       {/* image with title left, right */}
-      <div className="bg-[#FFE2EB]">
+      <div className="bg-current">
         <img
-          src="/test_image/7.jpg"
+          src="/use-brick.webp"
           alt="image_alt"
           className="object-cover w-[50%] h-full inline-block"
           data-aos="fade-right"
@@ -71,16 +71,14 @@ export default function Home() {
         >
           <div className="m-32">
             <div className="py-3 text-4xl font-dejaVuSerif">
-              <span>Đá SWAN Cao Cấp</span>
-              <br />
-              Lựa Chọn Đẳng Cấp
+              Foundation of the Industry
             </div>
             <div className="text-xl">
-              Đá SWAN - vẻ đẹp hoàn mỹ, chất lượng vượt trội, từ mỏ đá hàng đầu.
-              Lựa chọn sang trọng, bền vững theo thời gian cho mọi công trình.
-              Kết hợp nét đẹp tự nhiên và tính năng hiện đại, đá SWAN đảm bảo sự
-              sang trọng và ứng dụng cao. Giá cực kỳ ưu đãi, cơ hội nâng cấp
-              không gian sống và làm việc với sản phẩm đá cao cấp.
+              "Founded in 2008, Huynh Hanh Construction Supplies has been
+              dedicated to providing top-notch building materials to our valued
+              customers. Our mission is to deliver exceptional products and
+              services that meet the highest standards of quality and
+              reliability."
             </div>
             {/* <br />
         <a href="/shop" className="text-base underline underline-offset-8">
@@ -112,15 +110,23 @@ export default function Home() {
       </div> */}
 
       {/* divider */}
-      <div className="bg-[#FFE2EB] text-center py-10 text-3xl">
+      <div className="py-10 text-3xl text-center bg-current">
         <div className="p-10 text-xl">
-          Hãy để SWAN Stones ghi dấu ấn cá nhân của bạn qua từng viên đá quý và
-          thiết kế tự thân. <br />
-          Khám phá bộ sưu tập của chúng tôi và bắt đầu hành trình tạo nên sự
-          khác biệt của riêng bạn!
+          Hãy để Huynh Hạnh đồng hành cùng bạn qua từng công trình
+          <br />
+          hãy bắt đầu hành trình tạo nên sự khác biệt của riêng bạn!
         </div>
       </div>
-      {/* <ServiceSection></ServiceSection> */}
+      <ServiceSection></ServiceSection>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.6571756380413!2d108.43062897572!3d12.670468721407488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171c29ed3e312d3%3A0x8bd995115445caf7!2zWMSDbmcgRMOizIB1IEh1eW5oIEhhzKNuaA!5e0!3m2!1svi!2s!4v1717307771347!5m2!1svi!2s"
+        width="600"
+        height="450"
+        style={{ border: "0" }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+
       <Footer></Footer>
     </div>
   );
